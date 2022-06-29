@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:background="@drawable/bg_dialog_popup_result"
+    tools:context=".CallActivity"
+    >
+
+    <TextView
+        android:id="@+id/timerLabel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="10dp"
+        android:textSize="24sp"
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:textColor="@color/gray"
+        tools:text="Incoming"
+        />
+
+    <TextView
+        android:id="@+id/callTime"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="10dp"
+        android:textSize="24sp"
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:textColor="@color/gray"
+        tools:text="00:00"
+        />
+
+    <ImageView
+        android:id="@+id/callImage"
+        android:layout_width="64pt"
+        android:layout_height="64pt"
+        android:layout_marginTop="20pt"
+        android:gravity="center"
+        android:background="@drawable/bg_dialog_popup_result"
+        android:src="@drawable/photo_caller_result"
+        />
+
+    <TextView
+        android:id="@+id/callInfo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="10dp"
+        android:textSize="32sp"
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:textColor="@color/white"
+        tools:text="John Doe"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="0pt"
+        android:layout_weight="1"
+        android:orientation="horizontal"
+        android:layout_gravity="center_horizontal"
+        android:gravity="center"
+        android:paddingTop="16dp"
+        >
+        <ImageButton
+            android:id="@+id/keypad"
+            android:layout_width="75dp"
+            android:layout_height="75dp"
+            android:layout_gravity="bottom"
+            android:layout_margin="10pt"
+            android:background="@drawable/bg_dialog_popup_result"
+            android:src="@drawable/btn_keypad_active_result"
+            tools:ignore="SpeakableTextPresentCheck"
+            android:scaleType="fitXY"
+
+
+            />
+        <ImageButton
+            android:id="@+id/mute"
+            android:layout_width="75dp"
+            android:layout_height="75dp"
+            android:layout_gravity="bottom"
+            android:layout_margin="10pt"
+            android:background="@drawable/bg_dialog_popup_result"
+            android:src="@drawable/btn_mute_active_result"
+            tools:ignore="NestedWeights,SpeakableTextPresentCheck"
+            android:scaleType="fitXY"
+            />
+
+        <ImageButton
+            android:id="@+id/speaker"
+            android:layout_width="75dp"
+            android:layout_height="75dp"
+            android:layout_gravity="bottom"
+            android:layout_margin="10pt"
+            android:background="@drawable/bg_dialog_popup_result"
+            android:src="@drawable/btn_speaker_active_result"
+            tools:ignore="NestedWeights,SpeakableTextPresentCheck"
+            android:scaleType="fitXY"
+            />
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="10dp"
+        android:layout_weight="1"
+        android:orientation="horizontal"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:paddingTop="16dp"
+        >
+        <ImageButton
+            android:id="@+id/hangup"
+            android:layout_width="130dp"
+            android:layout_height="130dp"
+            android:layout_gravity="bottom"
+            android:padding="10dp"
+            android:background="@drawable/bg_dialog_popup_result"
+            android:src="@drawable/btn_call_end_result"
+            tools:ignore="SpeakableTextPresentCheck"
+            android:scaleType="fitXY"
+            />
+
+        <ImageButton
+            android:id="@+id/answer"
+            android:layout_width="130dp"
+            android:layout_height="130dp"
+            android:layout_gravity="bottom"
+            android:padding="10dp"
+            android:background="@drawable/bg_dialog_popup_result"
+            android:src="@drawable/btn_call_result"
+            tools:ignore="NestedWeights,SpeakableTextPresentCheck"
+            android:scaleType="fitXY"
+            />
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center_horizontal"
+    android:background="@drawable/bg_dialog_popup_result"
+    tools:context=".CallResult"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:orientation="horizontal"
+        android:layout_gravity="center"
+        android:gravity="center"
+        >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="0pt"
+        android:layout_weight="3"
+        android:orientation="vertical"
+        android:layout_gravity="center"
+        android:gravity="center"
+        >
+
+        <ImageButton
+            android:id="@+id/callResult"
+            android:layout_width="100dp"
+            android:layout_height="50dp"
+            android:layout_gravity="start"
+            android:layout_weight="1"
+            android:padding="10dp"
+            android:background="@drawable/bg_dialog_popup_result"
+            android:src="@drawable/ic_call_result"
+            tools:ignore="SpeakableTextPresentCheck"
+            android:scaleType="fitXY"
+            />
+        <ImageButton
+            android:id="@+id/messageResult"
+            android:layout_width="100dp"
+            android:layout_height="50dp"
+            android:layout_gravity="start"
+            android:layout_weight="1"
+            android:padding="10dp"
+            android:background="@drawable/bg_dialog_popup_result"
+            android:src="@drawable/ic_message_result"
+            tools:ignore="NestedWeights,SpeakableTextPresentCheck"
+            android:scaleType="fitXY"
+            />
+
+        <ImageButton
+            android:id="@+id/contactResult"
+            android:layout_width="100dp"
+            android:layout_height="50dp"
+            android:layout_gravity="start"
+            android:layout_weight="1"
+            android:padding="10dp"
+            android:background="@drawable/bg_dialog_popup_result"
+            android:src="@drawable/ic_assign_contact_result"
+            tools:ignore="NestedWeights,SpeakableTextPresentCheck"
+            android:scaleType="fitXY"
+            />
+
+        <ImageButton
+            android:id="@+id/settingResult"
+            android:layout_width="100dp"
+            android:layout_height="50dp"
+            android:layout_gravity="start"
+            android:layout_weight="1"
+            android:padding="10dp"
+            android:background="@drawable/bg_dialog_popup_result"
+            android:src="@drawable/ic_settings_result"
+            tools:ignore="NestedWeights,SpeakableTextPresentCheck"
+            android:scaleType="fitXY"
+            />
+
+    </LinearLayout>
+
+        <ImageButton
+            android:id="@+id/endImage"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:background="@drawable/bg_dialog_popup_result"
+            android:src="@drawable/call_end_image_result"
+            tools:ignore="SpeakableTextPresentCheck"
+            android:scaleType="fitXY"
+
+
+
+            />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/callInfoResult"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="10dp"
+        android:textSize="24sp"
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:textColor="@color/white"
+        tools:text="John Doe"
+        />
+
+    <TextView
+        android:id="@+id/callTimeResult"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="10dp"
+        android:textSize="36sp"
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:textColor="@color/white"
+        tools:text="00:00:00"
+        />
+
+    <TextView
+        android:id="@+id/timerLabelResult"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="10dp"
+        android:textSize="24sp"
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:textColor="@color/gray"
+        tools:text="Call ended 12:00"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="10dp"
+        android:layout_weight="2"
+        android:orientation="horizontal"
+        android:layout_gravity="center"
+        android:gravity="center"
+        >
+
+        <androidx.appcompat.widget.AppCompatEditText
+            android:id="@+id/messageInput"
+            android:layout_width="300dp"
+            android:layout_height="75dp"
+            android:imeOptions="actionGo"
+            android:hint="  Send quick message"
+            android:inputType="textCapWords"
+            android:textColor="@color/white"
+            android:textColorHint="@color/white"
+            android:background="@drawable/call_end_message_result"
+            android:layout_gravity="bottom"
+            />
+
+        <ImageButton
+            android:id="@+id/messageSend"
+            android:layout_width="75dp"
+            android:layout_height="75dp"
+            android:layout_gravity="bottom"
+            android:background="@drawable/bg_dialog_popup_result"
+            android:src="@drawable/ic_send_call_end_result"
+            tools:ignore="NestedWeights,SpeakableTextPresentCheck"
+            android:scaleType="fitXY"
+            />
+    </LinearLayout>
+
+</LinearLayout>
